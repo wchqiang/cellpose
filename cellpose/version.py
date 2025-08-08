@@ -6,7 +6,7 @@ from importlib.metadata import PackageNotFoundError, version
 import sys
 from platform import python_version
 import torch
-
+import warnings
 try:
     version = version("cellpose")
 except PackageNotFoundError:
